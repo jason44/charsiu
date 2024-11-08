@@ -234,7 +234,7 @@ class CharsiuPreprocessor_en(CharsiuPreprocessor):
         count = 0
         for dur in preds:
             if dur[-1] == '[SIL]':
-                word_dur.append((dur,'[SIL]'))
+                continue
             else:
                 while dur[-1] != phones_rep[count]:
                     count += 1
